@@ -66,4 +66,9 @@ Requires your Alpaca keys in `.env`, since it pulls fresh data from Alpaca.
 - The custom strategy deliberately spans three indicator categories (trend, momentum, volume) rather than stacking two indicators from the same category.
 - The dashboard surfaces the best strategy by **Sharpe Ratio** (risk-adjusted), not raw return.
 
+## Demo Video
+
+[Watch the demo video here](https://drive.google.com/file/d/1lQ9pgjDiV3PbCWgWsh7cURsyyMh4vRJd/view?usp=sharing)
+
+
 
