@@ -1,4 +1,4 @@
-#FINM-25000-Homework-1
+#FINM-25000-Homework-2
 
 
 A small trading terminal built on Alpaca's Market Data API. It pulls historical OHLCV bars, polls live bid/ask quotes, and displays everything in a Streamlit UI. Built for FINM-25000 Homework 1.
