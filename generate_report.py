@@ -151,7 +151,7 @@ def table_page(pdf, table):
                    loc="center", cellLoc="center")
     tbl.auto_set_font_size(False)
     tbl.set_fontsize(9)
-    tbl.scale(1.1, 1.6)
+    tbl.scale(0.8, 1.6)
     pdf.savefig(fig)
     plt.close(fig)
 
