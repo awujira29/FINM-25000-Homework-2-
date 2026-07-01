@@ -18,7 +18,7 @@ Built on top of the HW1 connector, this adds a full backtesting platform:
 |---|---|
 | `data_loader.py` | Pulls 5+ years of daily OHLCV bars for a chosen ticker from Alpaca |
 | `indicators.py` | 8 indicators: SMA, EMA, MACD, ADX (trend) · RSI (momentum) · Bollinger Bands, ATR (volatility) · OBV (volume) |
-| `strategies.py` | Strategy 1 (Trend Following: MACD+ADX), Strategy 2 (Mean Reversion: RSI+Bollinger), Strategy 3 (Custom: EMA cross + RSI filter + OBV volume confirmation) |
+| `strategies.py` | Strategy 1 (Trend Following: MACD+ADX), Strategy 2 (Mean Reversion: RSI+Bollinger), Strategy 3 (Custom: EMA cross + RSI filter + OBV volume confirmation) - more on the strategy 3 is in the description in strategies.py |
 | `backtest.py` | Long-only, no-leverage `Backtester` engine. $100k initial capital, lookahead-safe (signals lag one day), optional commission, trade log, buy & hold benchmark |
 | `metrics.py` | Total Return, CAGR, annualized Volatility, Sharpe, Sortino, Max Drawdown, Win Rate |
 | `backtest_app.py` | Streamlit dashboard: price/indicator chart with buy/sell markers, equity curve comparison, drawdown comparison, metrics table |
