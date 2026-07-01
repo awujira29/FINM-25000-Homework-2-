@@ -947,22 +947,6 @@ pyparsing = ">=3"
 python-dateutil = ">=2.7"
 
 [[package]]
-name = "mplfinance"
-version = "0.12.10b0"
-description = "Utilities for the visualization, and visual analysis, of financial data"
-optional = false
-python-versions = "*"
-groups = ["main"]
-files = [
-    {file = "mplfinance-0.12.10b0-py3-none-any.whl", hash = "sha256:76d3b095f05ff35de730751649de063bea4064d0c49b21b6182c82997a7f52bb"},
-    {file = "mplfinance-0.12.10b0.tar.gz", hash = "sha256:7da150b5851aa5119ad6e06b55e48338b619bb6773f1b85df5de67a5ffd917bf"},
-]
-
-[package.dependencies]
-matplotlib = "*"
-pandas = "*"
-
-[[package]]
 name = "narwhals"
 version = "2.22.1"
 description = "Extremely lightweight compatibility layer between dataframe libraries"
@@ -1965,4 +1949,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.13"
-content-hash = "9380a5d678cd9fa68ae05b09b07de129d23bf66ad8a75f4ce0430689c2ff97c8"
+content-hash = "1668f6f8ecdc0aedd336640570f2f5886f9490c58802cdf6a1b5af9e06e1dff9"
