@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "finm-25000-homework-1"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    {include = "connector.py"},
+    {include = "data_loader.py"},
+    {include = "indicators.py"},
+    {include = "strategies.py"},
+    {include = "backtest.py"},
+    {include = "metrics.py"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.34.2"
+dotenv = "^0.9.9"
+pytest = "^9.1.1"
+pandas = "^3.0.3"
+matplotlib = "^3.11.0"
+mplfinance = "^0.12.10b0"
+streamlit = "^1.58.0"
+plotly = "^6.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
