@@ -30,8 +30,21 @@ Run the tests:
 poetry run pytest test_backtesting.py -v
 ```
 
+## Charts
+
+![Dashboard](screenshots/dashboard.png)
+
+![Price chart with buy/sell signals](screenshots/price-signals.png)
+
+![Equity curve comparison](screenshots/equity-curve.png)
+
+![Drawdown comparison](screenshots/drawdown.png)
+
+
 **Design notes**
 - No lookahead bias: a strategy's signal for day T is only acted on starting day T+1 inside `Backtester.run()`.
 - Long-only / no leverage: position is always 0 or 1 (fully in cash or fully invested); no shorting, no margin.
 - The custom strategy deliberately spans three indicator categories (trend, momentum, volume) rather than stacking two indicators from the same category.
 - The dashboard surfaces the best strategy by **Sharpe Ratio** (risk-adjusted), not raw return.
+
+
