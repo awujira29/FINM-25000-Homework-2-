@@ -12,7 +12,7 @@ HEADERS = {
     "APCA-API-SECRET-KEY": os.environ["ALPACA_SECRET_KEY"],
 }
 
-def get_bars(symbol, timeframe="5Min", days=30, feed='iex'):
+def get_bars(symbol, timeframe="1day", days=1825, feed='iex'):
     start = (datetime.now(timezone.utc) - timedelta(days=days)).strftime("%Y-%m-%d")
     params = {
         "symbols": symbol,
@@ -37,23 +37,7 @@ def get_bars(symbol, timeframe="5Min", days=30, feed='iex'):
             break
     return bars
 
-def get_latest_quote(symbol, feed="iex"):
-    r = requests.get(f"{Base}/{symbol}/quotes/latest", headers=HEADERS, 
-                     params={"feed":feed})
-    r.raise_for_status()
-    data = r.json()
-    quote= data["quote"]
 
-    return {"bid": quote["bp"], "ask": quote["ap"]} 
-
-def get_latest_trade(symbol, feed="iex"):
-    r = requests.get(f"{Base}/{symbol}/trades/latest", headers=HEADERS, 
-                     params={"feed":feed})
-    r.raise_for_status()
-    data = r.json()
-    trade = data["trade"]
-
-    return {"price": trade['p']}
 
 
 if __name__ == "__main__":

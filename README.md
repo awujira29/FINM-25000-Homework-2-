@@ -4,12 +4,6 @@
 A small trading terminal built on Alpaca's Market Data API. It pulls historical OHLCV bars, polls live bid/ask quotes, and displays everything in a Streamlit UI. Built for FINM-25000 Homework 1.
 
 
-## Running it
-
-```
-poetry run streamlit run app.py
-```
-
  HW2: Technical Indicators & Strategy Backtesting
 
 Built on top of the HW1 connector, this adds a full backtesting platform:
